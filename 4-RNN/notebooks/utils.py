@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import Dataset
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+# NB : le choix du device est fait au début de chaque notebook (plus ici)
 
 
 class RNN(nn.Module):
